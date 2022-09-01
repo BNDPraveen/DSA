@@ -33,8 +33,13 @@ swapping in single line
 a=a^b^(b=a)
  =3^5^(3=3) [since p^p=0, 3^3 gets cancel]
  =5
- */
  
+TimeComplexity= n(n-1)/2
+
+   i        j           iterations
+   1       [0-->n-2]     n-1
+   2       [0-->n-3]     n-2
+*/ 
  #include<bits/stdc++.h>
 using namespace std;
 

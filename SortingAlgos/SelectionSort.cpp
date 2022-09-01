@@ -20,7 +20,11 @@ ar: |3 5 1 2 4 3   0-->n-1
      1 2 3 3 4 5   by the time we reach last element array is sorted
 
 partition i is going from i: 0--->n-2
-min value should be found in unsorted part j: i-->n-1  */
+min value should be found in unsorted part j: i-->n-1 
+
+TimeComplexity=O(n^2)
+SpaceComplexity=O(1)
+ */
          
 #include<bits/stdc++.h>
 using namespace std;
