@@ -2,9 +2,9 @@
 class BinarySearch{
     public static void main(String[] args) {
         int[] arr={1 , 2, 4 , 5 , 77 , 88, 99};
-        int target=5;
+        int target=77;
         int s=0;
-        int e=arr.length;
+        int e=arr.length-1;
         System.out.println(search(arr,target,s,e));
     }
     
