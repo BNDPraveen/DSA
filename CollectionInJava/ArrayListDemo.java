@@ -29,8 +29,25 @@ public class ArrayListDemo {
 
         System.out.println(list.contains(5)); //This checks if element is present in list return true or false Timecomplexity-->O(n)
 
+        //iteration technique-1
+        for(int i=0;i<list.size();i++){
+            System.out.println("The elements is "+ list.get(i));
+        }
+
+        //iteration using for each loop-2
+        for(Integer element: list){
+            System.out.println("foreach element is "+element);
+        }
+
+        //iterator
+        Iterator<Integer> it=list.iterator();
+        while(it.hasNext()){ //.hasNext-->This tells if there is a next element or not
+            System.out.println("Iterator "+it.next()); //.next()-->This gives next element of list
+        }
+
         list.clear(); //This will remove all the elements from list
         System.out.println(list);
+
 
 
 
@@ -54,6 +71,6 @@ Functions using Arraylist object
 .clear()-->This will remove all the elements from list
 .contains()-->This checks if element is present in list return true or false
 .set(index_no,100)-->This Changes element at index  to 100
-
-
+.size()--> This gives number of elements present in the ArrayList
  */
+
