@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    map<string,int> m;
+    unordered_map<string,int> m;
     
     //insertion--> pair<>,make_pair(),insert || pair<>,insert() || [key]=value
     pair<string,int> p=make_pair("praveen",5);
@@ -29,11 +29,15 @@ int main(){
     
 
     //iterator
-    map<string,int> :: iterator it=m.begin();
+    unordered_map<string,int> :: iterator it=m.begin();
     while(it !=m.end()){
         cout<<it->first<<" "<<it->second<<endl;
         it++;
     }
-    
-    
 }
+
+/*input
+8
+3 4 6 7 4 6 3 2
+output
+3 4 6 7 2*/
